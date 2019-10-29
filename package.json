@@ -1,0 +1,23 @@
+{
+  "name": "back-end-nodejs-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipepassosc/back-end-nodejs-mongodb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipepassosc/back-end-nodejs-mongodb/issues"
+  },
+  "homepage": "https://github.com/felipepassosc/back-end-nodejs-mongodb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

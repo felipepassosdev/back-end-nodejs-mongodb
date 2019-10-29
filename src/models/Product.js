@@ -19,4 +19,4 @@ const ProductSchema = new mongoose.Schema({
     }
 })
 
-mongoose.model('product', ProductSchema);
+mongoose.model('Product', ProductSchema);

@@ -16,18 +16,8 @@ mongoose.connect(
 )
 requireDir('./src/models/')
 
-const Product = mongoose.model('Product')
-
-// FIRST ROUTE
-app.get('/', (req, res) => {
-    Product.create({
-        title: 'React Native',
-        description: 'Build native apps with React',
-        url : 'https://facebook.github.io/react-native/'
-    })
-
-    return res.send('How are you? I am fine, thanks')
-})
+// WILD CARD - Receive GET / POST / PUT / DELETE, Whatever
+app.use('/api', require('./src/routes'))
 
 // LISTENING APP
 app.listen(3001)

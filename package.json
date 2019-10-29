@@ -19,5 +19,8 @@
   "homepage": "https://github.com/felipepassosc/back-end-nodejs-mongodb#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }

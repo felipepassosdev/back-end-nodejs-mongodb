@@ -1,5 +1,10 @@
+// Back-end NodeJS com MongoDB, usando também Express(para as rotas) e nodemon(ver alterações e reiniciar o servidor),  
+// Mongoose (solução baseada em esquemas para modelar os dados da sua aplicação), 
+// Require-dir(faz o papel de require, EX: com ele não é necessário fazer require de todos os models)
+
 const express = require('express')
 const mongoose = require('mongoose')
+const requireDir = require('require-dir')
 
 // STARTING APP
 const app = express()
@@ -9,6 +14,7 @@ mongoose.connect(
     'mongodb://localhost:27017/nodeapi',
     { useNewUrlParser: true }
 )
+requireDir('./src/models/Product')
 
 // FIRST ROUTE
 app.get('/', (req, res) => {

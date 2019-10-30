@@ -9,6 +9,9 @@ const requireDir = require('require-dir')
 // STARTING APP
 const app = express()
 
+// send data in JSOM format
+app.use(express.json())
+
 // STARTING BD
 mongoose.connect(
     'mongodb://localhost:27017/nodeapi',
